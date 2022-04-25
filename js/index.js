@@ -668,7 +668,7 @@ function gallery_full_render()
     var images = [];
     var images_hd = [];
 
-    for (let tu = 1; tu < 74; tu++) 
+    for (let tu = 1; tu < 64; tu++) 
     {
         // image (1).JPG
         // image(1).JPG
@@ -742,7 +742,7 @@ function gallery_full_render()
             // carousal_images = carousal_images + d;
 
             var dd = "<div class='carousel-item active'>"+
-                        "<img class='img-size' src='"+images_hd[i]+"' />"+
+                        "<img class='img-size' src='"+images[i]+"' />"+
                         "</div>";
             carousal_images = carousal_images + dd;
         }
@@ -758,7 +758,7 @@ function gallery_full_render()
             // carousal_images = carousal_images + d;
 
             var dd = "<div class='carousel-item'>"+
-                        "<img class='img-size' src='"+images_hd[i]+"' />"+
+                        "<img class='img-size' src='"+images[i]+"' />"+
                         "</div>";
             carousal_images = carousal_images + dd;
         }
