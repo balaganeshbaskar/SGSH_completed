@@ -675,7 +675,7 @@ function gallery_full_render()
         var name = 'images/Compressed/Gallery/image('+tu+').JPG';
         images.push(name);
 
-        var name_hd = 'images/Gallery/image('+tu+').JPG';
+        var name_hd = 'images/Compressed/Gallery/image('+tu+').JPG';
         images_hd.push(name_hd);
     }
 
