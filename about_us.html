@@ -26,14 +26,14 @@
 	<script src="js/index.js"></script>
 	<!-- onload="gettingJSON(); nav_active('home');" -->
 	
-	<body onload="gettingJSON(); nav_active('about_us');">
+	<body onload="gettingJSON(); nav_active('about_us'); scroll_to_id('scroll_here_now');">
 
 		<div class="navbar_div">
 			<div class="first_layer_nav">
 				<nav class="navbar navbar-dark">
 					<div class="container text-uppercase">
 						<div class="pull-left">
-							<a class=""><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Tamilnadu, India</a>
+							<a class=""><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Hosur, Tamilnadu, India</a>
 						</div>
 						<div class="pull-right">
 							<a id="temp_data" class="temp_navbar"></a>
@@ -45,7 +45,8 @@
 			<div class="second_layer_nav">
 				<nav class="stroke navbar navbar-expand-xl navbar-dark">
 					<div class="container text-uppercase">
-						<a href="index.html" class="navbar-brand"><img class="logo" src="images/Logo.JPG" alt="Shri Gowri Shangar Hotel"></a>
+						<a href="index.html" class="navbar-brand"><img class="logo" src="images/Logo_Head.JPG" alt="Shri Gowri Shangar Hotel"> SHRI GOWRI SHANGAR</a>
+						<!-- <a href="index.html" class="navbar-brand"><img class="logo" src="images/Logo.jpg" alt="Shri Gowri Shangar Hotel"></a> -->
 						<!-- <div class="pull-right">
 							<a class="temp_navbar">Temperature Temperature</a>
 						</div> -->
@@ -64,7 +65,7 @@
 				                    <a id="nav3" class="nav-link" href="#"> Rooms & Tarrif</a>
 				                </li> -->
 								<li class="nav-item dropdown">
-									<a id="navbarDropdown" class="nav-link" href="rooms.html"> Rooms & Tarrif</a>
+									<a id="navbarDropdown" class="nav-link" href="rooms.html?type=standard"> Rooms & Tarrif</a>
 									<!-- <a class="nav-link " href="rooms.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Rooms & Tarrif
 									</a>
@@ -96,18 +97,58 @@
 
 			<div class="third_layer_nav">
 				<div class="container text-uppercase">
-					<div class="row">
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>Vegetarian Restaurant</b></p>
+					<div class="row mobile_view_icons">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="ac">
+							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac">
+							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="restaurant">
+							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="room service">
+							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer">
 						</div>
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>24 * 7 WIFI</b></p>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="ac">
+							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="restaurant">
+							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="room service">
+							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="hair dryer">
+							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Hygienic">
 						</div>
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>Banquet Hall</b></p>
+					</div>
+					<div class="row screen_view_icons">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
 						</div>
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px;"><b>Laundry Service</b></p>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="ac">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="restaurant">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="room service">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="ac">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="restaurant">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="room service">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="hair dryer">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Hygienic">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
 						</div>
 					</div>
 				</div>
@@ -116,46 +157,53 @@
 		</div>
 		<!-- navbar end -->
 
+		
 
-		<div class="hero-image">
-			<!-- Hero image div -->
-		</div>
+		<div class="first_section_main_div"> 
+			<div class="hero-image">
+				<!-- Hero image div -->
+			</div> 
 
-		<div class="section_separator">
-			<!-- Just a black separator div -->
-		</div>
-		<div class="about-us-class">
-			<div class="container">
-				<div class="about-us">
-					<div class="row">					
-						<div class="about-us-header">
-							<p>
-								ABOUT US
-							</p>
-						</div>
-					</div>
-					<div class="row">					
-						<div class="about-us-content">
-							<p>
-								Shri Gowri Shangar Hotels was established in the year 1989 by its founder and visionary Mr. Shankaranarayanan. 
-								Hailing from an illustrious business family, Mr. Shankaranarayanan began his journey in the hospitality industry in Srilanka way back in the 1950s and 60s. 
-								With his wide range of experience and knowledge he was a pillar of support for the institution.
-							</p>
-							<p>
-								The hotel is currently managed and overseen by its managing partner and co founder Mr. S. Arul jothi. Mr Arul Jothi is an Alumni of Institute of Hotel Management, Chennai 1989, and Sainik School Amaravathi nagar. His exposure and experience being part of various Hotels contributed immensely towards the growth and development of Shri Gowri Shangar Hotels.
-							</p>
-							<p>
-								The hotel is widely known for its neat and clean high quality rooms at a reasonable and affordable price. It is a business hotel designed to the needs of official travellers. Vasanth Vihaar being a popular vegetarian restaurant has a charm and fame of its own.
-							</p>
+			<div class="section_separator" id="scroll_here_now">
+			</div>
+
+			<div class="content_over_image">
+				<div class="about-us-class">
+					<div class="container">
+						<div class="about-us">
+							<div class="row">					
+								<div class="about-us-header">
+									<p>
+										ABOUT US
+									</p>
+								</div>
+							</div>
+							<div class="row">					
+								<div class="about-us-content">
+									<p>
+										Shri Gowri Shangar Hotels was established in the year 1989 by its founder and visionary Mr. Shankaranarayanan. 
+										Hailing from an illustrious business family, Mr. Shankaranarayanan began his journey in the hospitality industry in Srilanka way back in the 1950s and 60s. 
+										With his wide range of experience and knowledge he was a pillar of support for the institution.
+									</p>
+									<p>
+										The hotel is currently managed and overseen by its managing partner and co founder Mr. S. Arul jothi. Mr Arul Jothi is an Alumni of Institute of Hotel Management, Chennai 1989, and Sainik School Amaravathi nagar. His exposure and experience being part of various Hotels contributed immensely towards the growth and development of Shri Gowri Shangar Hotels.
+									</p>
+									<p>
+										The hotel is widely known for its neat and clean high quality rooms at a reasonable and affordable price. It is a business hotel designed to the needs of official travellers. Vasanth Vihaar being a popular vegetarian restaurant has a charm and fame of its own.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</div>
 
 		<div class="section_separator">
 			<!-- Just a black separator div -->
 		</div>
+		
 		<div class="footer">
 			<div class="footer_layer_nav">
 				<nav class="stroke navbar navbar-expand-lg navbar-dark">
@@ -169,7 +217,7 @@
 				                    <a id="footer2" class="nav-link" href="about_us.html"> About Us</a>
 				                </li>
 				                <li class="nav-item">
-				                    <a id="footer3" class="nav-link" href="rooms.html">Rooms & Tarrif</a>
+				                    <a id="footer3" class="nav-link" href="rooms.html?type=standard">Rooms & Tarrif</a>
 				                </li>
 				                <li class="nav-item">
 				                    <a id="footer4" class="nav-link" href="#"> Restaurant </a>
@@ -191,18 +239,18 @@
 				<hr style="margin: 0px; width: 100%; border-top: 2px solid #6d4c1c;">
 				<div class="row" style="margin-bottom:10px; margin-top:10px; text-align: center;">
 					<div style="padding:0px; margin: auto;" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-						<a href="index.html" class="navbar-brand"><img class="footer_logo" src="images/Logo.JPG" alt="Shri Gowri Shangar Hotel"></a>
+						<a href="index.html" class="navbar-brand"><img class="footer_logo" src="images/Logo.jpg" alt="Shri Gowri Shangar Hotel"></a>
 					</div>
 					<div style="margin: auto;" class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
 						<div class="social_media_icons row">
 							<div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<a href="#" class="fa fa-facebook fa-2x"></a>
+								<a href="https://www.facebook.com/Shri-Gowri-Shangar-Hotels-848751648546112" target="_blank" class="fa fa-facebook fa-2x"></a>
 							</div>
 						</div>
 						<br>
 						<div class="social_media_icons row">
 							<div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<a href="#" class="fa fa-instagram fa-2x"></a>
+								<a href="https://www.google.com/travel/hotels/s/Bibo2UJdRJEsL9LP7" target="_blank" class="fa fa-google fa-2x"></a>
 							</div>
 						</div>
 					</div>
@@ -226,7 +274,7 @@
 					</div>
 					<div style="text-align: justify;" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 						<!-- <h5 class="text-uppercase text-muted font-weight-bold">Footer text 1</h5> -->
-						<p style="margin: auto;" class="text-muted">You deserve a hotel as unique as you are. Your wishes inspire us to delight you in unique ways making your stay the escape you didn’t know you needed. Our guests know to expect the unexpected at Shri Gowri Shangar. They also expect the best – and our approach to luxury is no exception.</p>
+						<p style="margin: auto;" class="text-muted">You deserve a hotel as unique as you are. Your wishes inspire us to delight you in unique ways making your stay the most ideal. We hope you have a pleasant stay at Shri Gowri Shangar Hotels.</p>
 					</div>
 				</div>
 				<hr style="margin-top:10px; margin-bottom:10px; width: 100%; border-top: 2px solid #6d4c1c;">

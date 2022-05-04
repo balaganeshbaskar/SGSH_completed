@@ -18,6 +18,11 @@ function gettingJSON()
 
         var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
+        // var weather_icon = "https://openweathermap.org/img/w/";
+        var weather_icon_id = data["weather"]["0"]["icon"] + ".png";
+
+        // console.log(weather_icon_id);
+
         const d = new Date();
         let day = d.getDay();
         // console.log(days[day]);
@@ -34,8 +39,10 @@ function gettingJSON()
         }
         // console.log(day + "-" + tomorrow);
 
+        var output1 = days[day]+"&nbsp;&nbsp;"+ Math.round(data["main"]["temp_min"])+"\xB0C" +"&nbsp;"+ " - " +"&nbsp;"+ Math.round(data["main"]["temp_max"])+"\xB0C"+"&nbsp;&nbsp"+"<img style='height: 30px;' src='https://openweathermap.org/img/w/"+weather_icon_id+"'></img>";
 
-        var output1 = days[day]+"&nbsp;&nbsp;"+ Math.round(data["main"]["temp"])+"\xB0C";
+        var output2 = days[day]+"&nbsp;&nbsp;"+ Math.round(data["main"]["temp"])+"\xB0C";
+
         document.getElementById('temp_data').innerHTML = output1;
 
         // var output2 = days[tomorrow]+"&nbsp;&nbsp;"+ Math.round(data["main"]["temp"])+"\xB0C";
@@ -204,6 +211,7 @@ function nav_active(page_name)
 
 function tabs_toggle(type)
 {   
+    // alert(type);
     document.getElementById("standard").hidden = true;
     // document.getElementById("balcony").hidden = true;
     document.getElementById("deluxe").hidden = true;
@@ -250,7 +258,9 @@ function tabs_toggle(type)
 
         // document.getElementById("customer_btn").style.backgroundColor = b;
         // document.getElementById("customer_btn").style.backgroundImage  = '';
-        // document.getElementById("customer_btn").style.color = c;   
+        // document.getElementById("customer_btn").style.color = c; 
+
+        document.getElementById("room_types_select").value = 'standard';
 
         document.getElementById("standard").hidden = false;
         document.getElementById("standard_caret").hidden = false;
@@ -281,7 +291,8 @@ function tabs_toggle(type)
 
         // document.getElementById("customer_btn").style.backgroundColor = b;
         // document.getElementById("customer_btn").style.backgroundImage  = '';
-        // document.getElementById("customer_btn").style.color = c;   
+        // document.getElementById("customer_btn").style.color = c;
+        document.getElementById("room_types_select").value = 'deluxe';
 
         document.getElementById("deluxe").hidden = false;
         document.getElementById("deluxe_caret").hidden = false;
@@ -298,6 +309,7 @@ function tabs_toggle(type)
         // document.getElementById("customer_btn").style.backgroundColor = b;
         // document.getElementById("customer_btn").style.backgroundImage  = '';
         // document.getElementById("customer_btn").style.color = c;   
+        document.getElementById("room_types_select").value = 'superior';
 
         document.getElementById("superior").hidden = false;
         document.getElementById("superior_caret").hidden = false;
@@ -314,6 +326,7 @@ function tabs_toggle(type)
         // document.getElementById("customer_btn").style.backgroundColor = b;
         // document.getElementById("customer_btn").style.backgroundImage  = '';
         // document.getElementById("customer_btn").style.color = c;   
+        document.getElementById("room_types_select").value = 'grand_superior';
 
         document.getElementById("grand_superior").hidden = false;
         document.getElementById("grand_superior_caret").hidden = false;
@@ -675,7 +688,7 @@ function gallery_full_render()
         var name = 'images/Compressed/Gallery/image('+tu+').JPG';
         images.push(name);
 
-        var name_hd = 'images/Compressed/Gallery/image('+tu+').JPG';
+        var name_hd = 'images/Gallery/image('+tu+').JPG';
         images_hd.push(name_hd);
     }
 
@@ -808,6 +821,18 @@ function gallery_full_render()
 
     indicator.innerHTML = full_content;
 
+
+}
+
+function scroll_to_id(id_here)
+{
+    var delayInMilliseconds = 1000; //1 second
+
+    setTimeout(function() {
+        document.getElementById(id_here).scrollIntoView({
+            behavior: 'smooth'
+          });
+    }, delayInMilliseconds);
 
 }
 

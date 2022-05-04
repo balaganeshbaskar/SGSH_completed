@@ -61,14 +61,14 @@
 		});
 	</script> 
 	<!-- onload="gettingJSON(); nav_active('home');" -->
-	<body onload="gettingJSON(); nav_active('home');">
+	<body onload="gettingJSON(); nav_active('home'); scroll_to_id('scroll_here_now');">
 
 		<div class="navbar_div">
 			<div class="first_layer_nav">
 				<nav class="navbar navbar-dark">
 					<div class="container text-uppercase">
 						<div class="pull-left">
-							<a class=""><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Tamilnadu, India</a>
+							<a class=""><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Hosur, Tamilnadu, India</a>
 						</div>
 						<div class="pull-right">
 							<a id="temp_data" class="temp_navbar"></a>
@@ -80,7 +80,7 @@
 			<div class="second_layer_nav">
 				<nav class="stroke navbar navbar-expand-xl navbar-dark">
 					<div class="container text-uppercase">
-						<a href="index.html" class="navbar-brand"><img class="logo" src="images/Logo.JPG" alt="Shri Gowri Shangar Hotel"></a>
+						<a href="index.html" class="navbar-brand"><img class="logo" src="images/Logo_Head.JPG" alt="Shri Gowri Shangar Hotel"> SHRI GOWRI SHANGAR</a>
 						<!-- <div class="pull-right">
 							<a class="temp_navbar">Temperature Temperature</a>
 						</div> -->
@@ -99,7 +99,7 @@
 				                    <a id="nav3" class="nav-link" href="#"> Rooms & Tarrif</a>
 				                </li> -->
 								<li class="nav-item dropdown">
-									<a id="navbarDropdown" class="nav-link" href="rooms.html"> Rooms & Tarrif</a>
+									<a id="navbarDropdown" class="nav-link" href="rooms.html?type=standard"> Rooms & Tarrif</a>
 									<!-- <a class="nav-link " href="rooms.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Rooms & Tarrif
 									</a>
@@ -131,18 +131,58 @@
 
 			<div class="third_layer_nav">
 				<div class="container text-uppercase">
-					<div class="row">
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>Vegetarian Restaurant</b></p>
+					<div class="row mobile_view_icons">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="ac">
+							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac">
+							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="restaurant">
+							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="room service">
+							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer">
 						</div>
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>24 * 7 WIFI</b></p>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="ac">
+							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="restaurant">
+							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="room service">
+							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="hair dryer">
+							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Hygienic">
 						</div>
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px; border-right: 1px solid rgba(165,157,144,.75); "><b>Banquet Hall</b></p>
+					</div>
+					<div class="row screen_view_icons">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
 						</div>
-						<div class="sec_nav col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							<p style="text-align: center; margin-top: 8px;"><b>Laundry Service</b></p>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="ac">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="restaurant">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="room service">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="ac">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="restaurant">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="room service">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="hair dryer">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Hygienic">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
 						</div>
 					</div>
 				</div>
@@ -156,7 +196,7 @@
 			<!-- Hero image div -->
 		</div>
 
-		<div class="section_separator">
+		<div class="section_separator" id="scroll_here_now">
 			<!-- Just a black separator div -->
 		</div>
 
@@ -199,6 +239,9 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<img src="images/Compressed/hp_gallery_1.JPG" data-aos="fade-right" class="gallery-images">
+						<!-- <div class="overlay">
+
+						  </div> -->
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<img src="images/Compressed/hp_gallery_3.JPG" data-aos="fade-up" class="gallery-images">
@@ -244,7 +287,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-gl-3 col-md-3 col-sm-12 col-xs-12">
-						<a href="rooms.html" class="anchor-text-decoration">
+						<a href="rooms.html?type=standard" class="anchor-text-decoration">
 						<div class="card room_types" style="width: 100%">
 						  <img class="card-img-top" src="images/Compressed/standard_thumbnail.JPG" alt="Card image cap">
 						  <div class="card-body">
@@ -256,7 +299,7 @@
 						</div></a>						
 					</div>
 					<div class="col-gl-3 col-md-3 col-sm-12 col-xs-12">
-						<a href="rooms.html" class="anchor-text-decoration">
+						<a href="rooms.html?type=deluxe" class="anchor-text-decoration">
 						<div class="card room_types" style="width: 100%">
 						  <img class="card-img-top" src="images/Compressed/deluxe_thumbnail.JPG" alt="Card image cap">
 						  <div class="card-body">
@@ -268,7 +311,7 @@
 						</div></a>						
 					</div>
 					<div class="col-gl-3 col-md-3 col-sm-12 col-xs-12">
-						<a href="rooms.html" class="anchor-text-decoration">
+						<a href="rooms.html?type=superior" class="anchor-text-decoration">
 						<div class="card room_types" style="width: 100%">
 						  <img class="card-img-top" src="images/Compressed/superior_thumbnail.JPG" alt="Card image cap">
 						  <div class="card-body">
@@ -280,7 +323,7 @@
 						</div></a>
 					</div>
 					<div class="col-gl-3 col-md-3 col-sm-12 col-xs-12">
-						<a href="rooms.html" class="anchor-text-decoration">							
+						<a href="rooms.html?type=grand" class="anchor-text-decoration">							
 							<div class="card room_types" style="width: 100%">
 							  <img class="card-img-top" src="images/Compressed/grand_superior_thumbnail.JPG" alt="Card image cap">
 							  <div class="card-body">
@@ -331,9 +374,30 @@
 			<div class="owl-carousel owl-theme mt-5">
 				<div class="owl-item">
 					<div class="card">
+						<!-- <div class="img-card"> <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> </div> -->
+						<div class="testimonial mt-4 mb-2"> Have been a regular customer to this lodge. Rooms are well maintained and kept clean. Has a very good vegetarian restaurant as well.  </div>
+						<div class="name">★★★★★<br><span class="testimonials_date">March 15, 2022</span><br>SANTHOSH KUMAR SANTHU</div>
+					</div>
+				</div>
+				<div class="owl-item">
+					<div class="card">
+						<!-- <div class="img-card"> <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> </div> -->
+						<div class="testimonial mt-4 mb-2"> A very comfortable and convenient stay, right in the heart of the city. Loved how they had paid parking that seems quite secure. </div>
+						<div class="name">★★★★★<br><span class="testimonials_date">April 20, 2021</span><br>MEGHNA MAMMEN</div>
+					</div>
+				</div>
+				<div class="owl-item">
+					<div class="card">
 						<!-- <div class="img-card"> <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> </div> -->
 						<div class="testimonial mt-4 mb-2">Amazing food. Very good service. Very affordable price.</div>
 						<div class="name">★★★★★<br><span class="testimonials_date">Sept 4, 2021</span><br>AJAY SHANKAR</div>
+					</div>
+				</div>
+				<div class="owl-item">
+					<div class="card">
+						<!-- <div class="img-card"> <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> </div> -->
+						<div class="testimonial mt-4 mb-2"> Ok, good place to stay, with car parking. </div>
+						<div class="name">★★★★★<br><span class="testimonials_date">Jan 15, 2022</span><br>DYNAMIC SYSTEMS</div>
 					</div>
 				</div>
 				<div class="owl-item">
@@ -353,7 +417,7 @@
 				<div class="owl-item">
 					<div class="card">
 						<!-- <div class="img-card"> <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> </div> -->
-						<div class="testimonial mt-4 mb-2"> We had a 3 night stay to Hosur, and were very satisfied with every aspect of the hotel. </div>
+						<div class="testimonial mt-4 mb-2"> We had a 3 night stay at Hosur, and were very satisfied with every aspect of the hotel. </div>
 						<div class="name">★★★★★<br><span class="testimonials_date">Sept 4, 2021</span><br>JOHN ABINESH</div>
 					</div>
 				</div>
@@ -369,6 +433,13 @@
 						<!-- <div class="img-card"> <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> </div> -->
 						<div class="testimonial mt-4 mb-2"> Excellent ambience and friendly staff. The rooms were well maintained. </div>
 						<div class="name">★★★★★<br><span class="testimonials_date">March 15, 2022</span><br>JOHN VICTOR DAS</div>
+					</div>
+				</div>
+				<div class="owl-item">
+					<div class="card">
+						<!-- <div class="img-card"> <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> </div> -->
+						<div class="testimonial mt-4 mb-2"> Best place to have hygienic vegetarian foods and have stayed there for 4 days without any issues. Rooms service deserves an applause for their efforts and service towards customers. </div>
+						<div class="name">★★★★★<br><span class="testimonials_date">March 12, 2021</span><br>VASA ADMIN</div>
 					</div>
 				</div>
 			</div>
@@ -388,24 +459,68 @@
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide row">
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/cumi.jpeg" class="logo-images"></div>
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/darling.png" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(1).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(2).jpeg" class="logo-images"></div>
 					</div>
 					<div class="swiper-slide row">
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/pmctech.jpeg" class="logo-images"></div>
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/SBI-emblem.jpg" class="logo-images"></div>		
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(3).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(4).jpeg" class="logo-images"></div>
 					</div>
 					<div class="swiper-slide row">
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/titan.jpeg" class="logo-images"></div>
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/ttk.png" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(5).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(6).jpeg" class="logo-images"></div>
 					</div>
 					<div class="swiper-slide row">
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/inel.png" class="logo-images"></div>
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/supreme.jpg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(7).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(8).jpeg" class="logo-images"></div>
 					</div>
 					<div class="swiper-slide row">
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/tvs.jpg" class="logo-images"></div>
-						<div class="swiper-slide-1"><img src="images/Compressed/LOGOS/tvsscl.jpg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(9).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(10).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(11).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(12).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(13).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(14).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(15).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(16).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(17).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(18).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(19).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(20).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(21).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(22).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(23).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(24).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(25).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(26).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(27).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(28).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(29).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(30).jpeg" class="logo-images"></div>
+					</div>
+					<div class="swiper-slide row">
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(31).jpeg" class="logo-images"></div>
+						<div class="swiper-slide-1"><img src="images/Company_Logos/logo(32).jpeg" class="logo-images"></div>
 					</div>
 				</div>
 				<!-- <div class="swiper-pagination"></div> -->
@@ -429,7 +544,7 @@
 				                    <a id="footer2" class="nav-link" href="about_us.html"> About Us</a>
 				                </li>
 				                <li class="nav-item">
-				                    <a id="footer3" class="nav-link" href="rooms.html">Rooms & Tarrif</a>
+				                    <a id="footer3" class="nav-link" href="rooms.html?type=standard">Rooms & Tarrif</a>
 				                </li>
 				                <li class="nav-item">
 				                    <a id="footer4" class="nav-link" href="#"> Restaurant </a>
@@ -456,13 +571,13 @@
 					<div style="margin: auto;" class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
 						<div class="social_media_icons row">
 							<div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<a href="#" class="fa fa-facebook fa-2x"></a>
+								<a href="https://www.facebook.com/Shri-Gowri-Shangar-Hotels-848751648546112" target="_blank" class="fa fa-facebook fa-2x"></a>
 							</div>
 						</div>
 						<br>
 						<div class="social_media_icons row">
 							<div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<a href="#" class="fa fa-instagram fa-2x"></a>
+								<a href="https://www.google.com/travel/hotels/s/Bibo2UJdRJEsL9LP7" target="_blank" class="fa fa-google fa-2x"></a>
 							</div>
 						</div>
 					</div>
@@ -486,7 +601,7 @@
 					</div>
 					<div style="text-align: justify;" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 						<!-- <h5 class="text-uppercase text-muted font-weight-bold">Footer text 1</h5> -->
-						<p style="margin: auto;" class="text-muted">You deserve a hotel as unique as you are. Your wishes inspire us to delight you in unique ways making your stay the escape you didn’t know you needed. Our guests know to expect the unexpected at Shri Gowri Shangar. They also expect the best – and our approach to luxury is no exception.</p>
+						<p style="margin: auto;" class="text-muted">You deserve a hotel as unique as you are. Your wishes inspire us to delight you in unique ways making your stay the most ideal. We hope you have a pleasant stay at Shri Gowri Shangar Hotels.</p>
 					</div>
 				</div>
 				<hr style="margin-top:10px; margin-bottom:10px; width: 100%; border-top: 2px solid #6d4c1c;">
