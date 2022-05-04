@@ -114,6 +114,24 @@ img.logo {
    margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px)
+{
+   
+  img.logo 
+  {
+    filter: brightness(120%);
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand
+  {
+    color: #db9839 !important;
+    font-size: 20px;
+  }
+
+}
+
 
 /* stroke */
 nav.stroke ul li a
