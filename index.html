@@ -131,20 +131,25 @@
 
 			<div class="third_layer_nav">
 				<div class="container text-uppercase">
+					<div class="row mobile_view_icons" id="navbar_icon_tip_div">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<span id="icon_tip_text">Ammenities</span>
+						</div>
+					</div>
 					<div class="row mobile_view_icons">
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="ac">
-							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac">
-							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="restaurant">
-							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="room service">
-							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer">
+							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="Wifi" onclick="icon_tip('Free Wifi');">
+							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac" onclick="icon_tip('A/C or NON A/C');">
+							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="Vegetarian Restaurant" onclick="icon_tip('Vegetarian Restaurant');">
+							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="Room service" onclick="icon_tip('Room Service');">
+							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer" onclick="icon_tip('Hairdryer');">
 						</div>
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="ac">
-							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="restaurant">
-							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="room service">
-							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="hair dryer">
-							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Hygienic">
+							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="24/7 Elevator service" onclick="icon_tip('24/7 Elevator service');">
+							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="Parking Available" onclick="icon_tip('Parking Available');">
+							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="Television" onclick="icon_tip('Television');">
+							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="Laundry Service" onclick="icon_tip('Laundry Service');">
+							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Safe and Hygienic" onclick="icon_tip('Safe and Hygienic');">
 						</div>
 					</div>
 					<div class="row screen_view_icons">
@@ -293,10 +298,11 @@
 						  <div class="card-body">
 						    <h5 class="card-title">STANDARD</h5>
 						    <p class="card-text" style="margin-top: 10px;">★ DOUBLE & TRIPLE OCCUPANCY ROOMS</p>
-						    <p class="card-text">★ A/C & NON A/C ROOMS</p>
-						    <p class="card-text">★ PRICE : 1000 - 1200</p>
+							<p class="card-text">★ BALCONY AVAILABLE</p>
+						    <p class="card-text">★ NON A/C ROOMS</p>
+						    <p class="card-text">★ PRICE : 1000 - 1800</p>
 						  </div>
-						</div></a>						
+						</div></a>		
 					</div>
 					<div class="col-gl-3 col-md-3 col-sm-12 col-xs-12">
 						<a href="rooms.html?type=deluxe" class="anchor-text-decoration">
@@ -304,9 +310,11 @@
 						  <img class="card-img-top" src="images/Compressed/deluxe_thumbnail.JPG" alt="Card image cap">
 						  <div class="card-body">
 						    <h5 class="card-title">DELUXE</h5>
-						    <p class="card-text" style="margin-top: 10px;">★ DOUBLE & TRIPLE OCCUPANCY ROOMS</p>
+						    <p class="card-text" style="margin-top: 10px;">★ DOUBLE OCCUPANCY ROOMS</p>
 						    <p class="card-text">★ A/C & NON A/C ROOMS</p>
-						    <p class="card-text">★ PRICE : 1200 - 1650</p>
+						    <p class="card-text">★ PRICE : 1300 - 1650</p>
+							<p class="card-text" style="color: black;">-</p>
+							<p class="card-text" style="color: black;">-</p>
 						  </div>
 						</div></a>						
 					</div>
@@ -319,6 +327,7 @@
 						    <p class="card-text" style="margin-top: 10px;">★ DOUBLE & TRIPLE OCCUPANCY ROOMS</p>
 						    <p class="card-text">★ A/C & NON A/C ROOMS</p>
 						    <p class="card-text">★ PRICE : 1600 - 2200</p>
+							<p class="card-text" style="color: black;">-</p>
 						  </div>
 						</div></a>
 					</div>
@@ -332,6 +341,7 @@
 							    <p class="card-text">★ DOUBLE OCCUPANCY ROOMS</p>
 							    <p class="card-text">★ A/C & NON A/C ROOMS</p>
 							    <p class="card-text">★ PRICE : 2200 - 2400</p>
+								<p class="card-text" style="color: black;">-</p>
 							  </div>
 							</div>
 						</a>

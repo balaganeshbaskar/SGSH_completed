@@ -76,16 +76,6 @@ body, html
     }
 }
 
-.second_layer_nav
-{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    text-transform: none;
-    font-size: 0.95rem;
-
-    color: white !important;
-    background-color: rgba(20,20,20,.98) !important;
-}
 
 .navbar-brand
 {
@@ -96,6 +86,7 @@ body, html
 .second_layer_nav .nav-link
 {
   color: white !important;
+  padding: 10px 1px 10px 1px !important;
 }
 
 .second_layer_nav .dropdown-item, .dropdown-menu
@@ -105,11 +96,27 @@ body, html
 }
 
 
-img.logo {
-   filter: brightness(120%);
-   height: 70px;
-   margin-bottom: 10px;
+.second_layer_nav
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 1rem;
+
+    color: white !important;
+    background-color: rgba(0,0,0) !important;
 }
+
+
+img.logo 
+{
+  filter: brightness(120%);
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+
+
 
 @media screen and (max-width: 768px)
 {
@@ -128,7 +135,6 @@ img.logo {
   }
 
 }
-
 
 /* stroke */
 nav.stroke ul li a

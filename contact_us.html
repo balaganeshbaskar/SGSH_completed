@@ -64,13 +64,35 @@
 			document.getElementById("cust_message").style.border = '1px solid red';
 		}
 
+		// if(counter == 3 && honey_pot.length == 0)
+		// {
+		// 	var key = "eK7COfMokP_XkmWpxBHEPHU3Dxkzu7It0wJjBthr2Xs"; // << YOUR KEY HERE
+		// 	var message_name = "enquiry_to_mail";    // << YOUR MESSAGE NAME HERE
+		// 	var urls = "https://maker.ifttt.com/trigger/" + message_name + "/with/key/" + key;
+		// 	$.ajax({  
+		// 	url: urls,
+		// 	data: { value1: text },
+		// 	dataType: "jsonp",
+		// 	complete: function(jqXHR, textStatus) {
+		// 		document.getElementById("EmailForm").hidden = true;
+		// 		document.getElementById("thanks_enquiry").hidden = false;
+		// 	} 
+		// 	}); 
+			
+		// }  
+		// else
+		// {
+		// 	alert("Fill all 3 fields to submit enquiry!");
+		// }
+
 		if(counter == 3 && honey_pot.length == 0)
 		{
-			var key = "eK7COfMokP_XkmWpxBHEPHU3Dxkzu7It0wJjBthr2Xs"; // << YOUR KEY HERE
-			var message_name = "enquiry_to_mail";    // << YOUR MESSAGE NAME HERE
+			var key = "lrKEd-FYXDvBWMHBMDf_5_JFc_buROg20C3aJ084TL-"; // << YOUR KEY HERE
+			var message_name = "SGSH_enquiry_test";    // << YOUR MESSAGE NAME HERE
 			var urls = "https://maker.ifttt.com/trigger/" + message_name + "/with/key/" + key;
+			
 			$.ajax({  
-			url: urls,
+			url: urls,	
 			data: { value1: text },
 			dataType: "jsonp",
 			complete: function(jqXHR, textStatus) {
@@ -159,20 +181,25 @@
 
 			<div class="third_layer_nav">
 				<div class="container text-uppercase">
+					<div class="row mobile_view_icons" id="navbar_icon_tip_div">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<span id="icon_tip_text">Ammenities</span>
+						</div>
+					</div>
 					<div class="row mobile_view_icons">
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="ac">
-							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac">
-							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="restaurant">
-							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="room service">
-							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer">
+							<img title="Free Wifi" src="images/icons/wifi.png" class="icons_navbar" alt="Wifi" onclick="icon_tip('Free Wifi');">
+							<img title="AC / Non-AC rooms" src="images/icons/ac.png" class="icons_navbar" alt="ac" onclick="icon_tip('A/C or NON A/C');">
+							<img title="Vegetarian Restaurant" src="images/icons/dinner.png" class="icons_navbar" alt="Vegetarian Restaurant" onclick="icon_tip('Vegetarian Restaurant');">
+							<img title="Room Service" src="images/icons/food-service.png" class="icons_navbar" alt="Room service" onclick="icon_tip('Room Service');">
+							<img title="Hair Dryer" src="images/icons/hairdryer.png" class="icons_navbar" alt="hair dryer" onclick="icon_tip('Hairdryer');">
 						</div>
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="ac">
-							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="restaurant">
-							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="room service">
-							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="hair dryer">
-							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Hygienic">
+							<img title="24/7 Elevator service" src="images/icons/elevator.png" class="icons_navbar" alt="24/7 Elevator service" onclick="icon_tip('24/7 Elevator service');">
+							<img title="Parking Available" src="images/icons/parking.png" class="icons_navbar" alt="Parking Available" onclick="icon_tip('Parking Available');">
+							<img title="Television" src="images/icons/television.png" class="icons_navbar" alt="Television" onclick="icon_tip('Television');">
+							<img title="Laundry Service" src="images/icons/washing-machine.png" class="icons_navbar" alt="Laundry Service" onclick="icon_tip('Laundry Service');">
+							<img title="Safe and Hygienic" src="images/icons/safe.png" class="icons_navbar" alt="Safe and Hygienic" onclick="icon_tip('Safe and Hygienic');">
 						</div>
 					</div>
 					<div class="row screen_view_icons">
@@ -326,7 +353,7 @@
 				<hr style="margin: 0px; width: 100%; border-top: 2px solid #6d4c1c;">
 				<div class="row" style="margin-bottom:10px; margin-top:10px; text-align: center;">
 					<div style="padding:0px; margin: auto;" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-						<a href="index.html" class="navbar-brand"><img class="footer_logo" src="images/Logo.jpg" alt="Shri Gowri Shangar Hotel"></a>
+						<a href="index.html" class="navbar-brand"><img class="footer_logo" src="images/Logo.JPG" alt="Shri Gowri Shangar Hotel"></a>
 					</div>
 					<div style="margin: auto;" class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
 						<div class="social_media_icons row">

@@ -836,3 +836,11 @@ function scroll_to_id(id_here)
 
 }
 
+
+
+function icon_tip(icon_name)
+{
+    // alert(icon_name);
+    document.getElementById('icon_tip_text').innerHTML =icon_name;
+    // document.getElementById('navbar_icon_tip_div').hidden = false;
+}
